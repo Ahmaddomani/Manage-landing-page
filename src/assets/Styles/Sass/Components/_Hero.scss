@@ -1,0 +1,39 @@
+@import "../abstract/functions";
+
+.Hero {
+  display: flex;
+
+  margin-top: 50px;
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .illustration {
+    @media (max-width: 992px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .Titles {
+    width: 50%;
+    @media (max-width: 992px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  h1 {
+    color: $Dark-Blue;
+    font-size: 55px;
+    width: 500px;
+    @media (max-width: 992px) {
+      width: 100%;
+      font-size: 40px;
+    }
+  }
+  p {
+    margin-bottom: 40px;
+  }
+  img {
+    max-width: 100%;
+  }
+}

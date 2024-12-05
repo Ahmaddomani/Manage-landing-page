@@ -1,0 +1,16 @@
+@import "../abstract/functions";
+
+#get-started {
+  color: white;
+  font-size: 15px;
+  background-color: $Bright-Red;
+  padding: 11px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: $main-transition;
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 1px 19px 13px 0px hsl(12, 88%, 81%);
+  }
+}

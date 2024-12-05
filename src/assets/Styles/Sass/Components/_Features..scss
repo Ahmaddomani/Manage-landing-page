@@ -1,0 +1,67 @@
+@import "../abstract/functions";
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0;
+  .features-text {
+    @media (max-width: 992px) {
+      width: 100%;
+      text-align: center;
+    }
+    width: 50%;
+    h1 {
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+      color: $Dark-Blue;
+      width: 500px;
+      margin-top: 0;
+    }
+    p {
+      @media (max-width: 992px) {
+        max-width: 100%;
+      }
+      max-width: 400px;
+    }
+  }
+  .features-points {
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    width: 50%;
+    height: 100%;
+    .title {
+      display: flex;
+      align-items: center;
+      @media (max-width: 992px) {
+        background-color: $Very-Pale-Red;
+        border-radius: 25px;
+      }
+      h4 {
+        color: $Dark-Blue;
+        @media (max-width: 992px) {
+          font-size: 17px;
+          margin: 0;
+        }
+      }
+      span {
+        margin-inline-end: 30px;
+        color: white;
+        background-color: $Bright-Red;
+        padding: 10px 25px;
+        border-radius: 20px;
+      }
+    }
+    p {
+      padding-inline-start: 100px;
+      @media (max-width: 992px) {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  p {
+    max-width: 100%;
+  }
+}

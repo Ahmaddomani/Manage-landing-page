@@ -1,0 +1,26 @@
+.simplify-section {
+  padding: 50px 0;
+
+  background-color: $Bright-Red;
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 776px) {
+      flex-direction: column;
+    }
+  }
+  button {
+    background-color: white !important;
+    color: $Bright-Red !important;
+    font-weight: bold;
+  }
+  h1 {
+    color: white;
+    max-width: 500px;
+    @media (max-width: 776px) {
+      text-align: center;
+      font-size: 40px;
+    }
+  }
+}

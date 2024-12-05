@@ -1,0 +1,67 @@
+@import "../abstract/functions";
+
+.Navbar {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .links {
+    @media (max-width: 776px) {
+      display: none;
+    }
+    display: flex;
+    a {
+      color: black;
+      padding: 0 10px;
+      font-size: 14px;
+      transition: $main-transition;
+      font-weight: 500;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    @media (max-width: 776px) {
+      display: none;
+    }
+  }
+  .humbrgar {
+    display: none;
+    position: relative;
+    z-index: 10;
+
+    @media (max-width: 776px) {
+      display: block;
+    }
+    .close {
+      content: url("../../../../../images/icon-close.svg");
+    }
+  }
+  .drop-menu {
+    padding: 20px 0;
+    position: absolute;
+    top: 80px;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 90%;
+    left: 5%;
+    left: -100vw;
+    text-align: center;
+    margin-left: auto;
+    transition: $main-transition;
+    z-index: 10;
+
+    li a {
+      display: block;
+      color: black;
+      padding: 15px;
+    }
+  }
+}

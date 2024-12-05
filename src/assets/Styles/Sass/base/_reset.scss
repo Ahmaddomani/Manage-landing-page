@@ -1,0 +1,76 @@
+@import "../abstract/functions";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.show {
+  display: block !important;
+}
+.close {
+  content: url("../../../../../images/icon-close.svg");
+}
+.drop {
+  left: 5% !important;
+}
+
+p {
+  color: $Dark-Grayish-Blue;
+  max-width: 375px;
+  line-height: 1.5;
+
+  @media (max-width: 992px) {
+    max-width: 100%;
+  }
+}
+h1 {
+  color: $Dark-Blue;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: $Dark-Blue;
+  background: $Bright-Red;
+}
+
+::selection {
+  color: $Dark-Blue;
+  background: $Bright-Red;
+}

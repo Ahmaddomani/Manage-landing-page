@@ -1,0 +1,12 @@
+.App {
+  position: relative;
+  div.To-top {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    img {
+      cursor: pointer;
+    }
+  }
+}

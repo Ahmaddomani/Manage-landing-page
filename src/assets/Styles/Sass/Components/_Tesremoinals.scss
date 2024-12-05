@@ -1,0 +1,65 @@
+@import "../abstract/functions";
+
+.Testimonials {
+  text-align: center;
+  @media (max-width: 550px) {
+    margin-top: 20px;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  margin-top: 100px;
+  .Cards-wrapper {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    margin-bottom: 50px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    .card {
+      h4 {
+        color: $Dark-Blue;
+      }
+      min-width: 300px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: $card-bg;
+      padding: 10px;
+      @media (max-width: 776px) {
+        min-width: 100%;
+      }
+    }
+  }
+  .Pointers-points {
+    display: none;
+    @media (max-width: 776px) {
+      display: block;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .pointer {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $Bright-Red;
+    margin: 10px;
+    border-radius: 50%;
+    &.active {
+      background-color: $Bright-Red;
+    }
+  }
+  button {
+    margin: 20px;
+  }
+}
